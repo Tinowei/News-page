@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+
+/* 引入 Inter 字體 */
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap'); */
+
+/* 自訂 CSS 變數 */
+:root {
+  /* === Primary Colors === */
+  --primary-orange: hsl(35, 77%, 62%);
+  --primary-red: hsl(5, 85%, 63%);
+
+  /* === Neutral Colors === */
+  --neutral-offwhite: hsl(36, 100%, 99%);
+  --neutral-grayish-blue: hsl(233, 8%, 79%);
+  --neutral-dark-grayish-blue: hsl(236, 13%, 42%);
+  --neutral-very-dark-blue: hsl(240, 100%, 5%);
+
+  /* === Font === */
+  --font-body: 'Inter', sans-serif;
+  --font-size-body: 15px;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+}
+
+/* 全域設定 */
+body {
+  font-family: var(--font-body);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-normal);
+  background-color: var(--neutral-offwhite);
+  color: var(--neutral-very-dark-blue);
+  line-height: 1.6;
+}
